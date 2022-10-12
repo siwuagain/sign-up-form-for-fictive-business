@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEYOND: Sign-Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sign-up-form.css">
+  <script src="sign-up-form.js" defer></script>
+</head>
 
+<body>
+  <div class="page-container">
+
+    <div class="image-and-brand-container">
+      
+      <p class="brand-name">BEYOND <br><span class="subtitle">Breach the limits</span></p>
+      <p class="credit">
+        Photo by <a href="https://unsplash.com/@stevenerixon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Steven Erixon</a> on <a href="https://unsplash.com/s/photos/running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+      <p class="disclaimer">*This is not a real online service</p>
+    </div>
+
+    <div class="sign-up-field">
+      <p class="sign-up-text">Change starts <span style="font-weight: bold">now</span>. Sign up today.</p>
+
+      <form action='#' method="post">
+        <ul class="fill-user-information">
+          <li>
+            <label for="last_name">LAST NAME*</label>
+            <input type="text" id="last_name" placeholder="e.g. Smith" required>
+          </li>
+
+          <li>
+            <label for="first_name">FIRST NAME*</label>
+            <input type="text" id="first_name" placeholder="e.g. John" required>
+          </li>
+
+          <li>
+            <label for="user_email">EMAIL*</label>
+            <input type="email" id="user_email" placeholder="e.g. johnsmith@gmail.com" required>
+          </li>
+
+          <li>
+            <label for="user_phone_number">PHONE NUMBER</label>
+            <input type="text" id="user_phone_number">
+          </li>
+
+          <li>
+            <label for="user_password">CREATE PASSWORD*</label>
+            <input type="password" id="user_password" minlength="8" required>
+          </li>
+
+          <li>
+            <label for="confirm_user_password">CONFIRM PASSWORD*</label>
+            <input type="password" id="confirm_user_password" minlength="8" required>
+            <div id="password_match_alert"></div>
+          </li>
+
+          <li>
+            <div class="newsletter-consent-field">
+              <label for="newsletter-consent">I consent to receive BEYOND newsletters via email. Please consult the <a>Privacy Policy</a> for further information.</label>
+              <input type="checkbox" id="newsletter-consent" class="newsletter-consent-checkbox">
+            </div>
+            <button type="submit" class="create_account_btn">Create Account</button>
+
+            <p class="old-user-redirect">Already registered? <a href="#">Log in</a> instead</p> 
+          </li>
+        </ul>
+      </form> 
+    </div>
+  </div>
+</body>
+
+</html>
