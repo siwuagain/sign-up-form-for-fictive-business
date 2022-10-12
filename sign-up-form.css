@@ -173,3 +173,60 @@ label {
   color: rgb(122, 122, 122);
 }
 
+@media (min-width: 0px) and (max-width: 880px) {
+  .sign-up-text {
+    font-size: 2rem;
+  }
+
+  .fill-user-information {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 675px) {
+ 
+  .page-container {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .sign-up-text,
+  .fill-user-information,
+  label[for="newsletter-consent"],
+  label[for="newsletter-consent"] a,
+  .old-user-redirect,
+  .old-user-redirect a{
+    text-shadow: rgb(208, 208, 208) 2px 2px 9px;
+    color: white;
+  }
+
+  .image-and-brand-container {
+    background-image: none;
+    height: auto;
+    width: auto;
+  }
+
+  .sign-up-field {
+    background-image: url(runner.jpg);
+    background-position: center;
+  }
+
+  #password_match_alert {
+    color: rgb(235, 235, 235);
+  }
+
+  .brand-name {
+   
+    top: 20px;
+    right: 0px;
+  }
+
+  .disclaimer {
+    left: 10px;
+  }
+
+  .credit {
+    font-size: 0.7rem;
+    top: 980px;
+  }
+}
